@@ -14,6 +14,8 @@ public class Main {
         // Compiler complains if you try to change a constant.
         // (It knows we defined STANDARD_DIE using final.)
         // STANDARD_DIE = 7;
+
+        System.out.println(Double.parseDouble("3.557"));
         dieRoll();
         /*
          * Call the static method multiSidedDieRoll
