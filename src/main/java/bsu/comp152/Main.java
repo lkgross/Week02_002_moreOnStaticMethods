@@ -3,14 +3,24 @@ package bsu.comp152;
 import java.util.Random;
 
 public class Main {
+
+    /*
+     * A class constant is a value you don't want to change.
+     * A convention is to use all caps for a constant name.
+     */
+    public static final int STANDARD_DIE = 6;
+
     public static void main(String[] args) {
+        // Compiler complains if you try to change a constant.
+        // (It knows we defined STANDARD_DIE using final.)
+        // STANDARD_DIE = 7;
         dieRoll();
         /*
          * Call the static method multiSidedDieRoll
          * passing the argument (parameter value)
          * 6 or 12 or ... other number of sides.
          */
-        multiSidedDieRoll(6);
+        multiSidedDieRoll(STANDARD_DIE);
         multiSidedDieRoll(12);
         System.out.println("You rolled a " + (returnRoll(6)
                 + returnRoll(6)));
